@@ -4,26 +4,37 @@
 		<meta charset='utf-8'>
 		<title>The Boise Bean</title>
 		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Magra' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		<div id="wrapper">
 		<header>
-			<img src="images/sml_logo.png" alt="logo">
+			<img id="logo" src="images/sml_logo.png" alt="logo">
 			<h1>The Boise Bean Coffee Shop</h1>
 			<nav>
 				<ul>
-					<li><a href="#drinks">Featured Drinks</a></li>
-					<li><a href="#roasted">Fresh Roasted</a></li>
-					<li><a href="#events">Events</a></li>
 					<li><a href="mailto:customerservice@caffeineaddict.com">Contact</a></li>	
+					<li><a href="#events">Events</a></li>
+					<li><a href="#roasted">Fresh Roasted</a></li>
+					<li><a href="#drinks">Featured Drinks</a></li>
 				</ul>
 			</nav>
 		</header>
 		<div id="story">		
 			<h2>Origins</h2> 
-			<p>On December 4th, 1986, Professor Emerson Black set about hanging a picture frame in his bathroom. While precariously perched on top of the commode, the good professor lost his footing. Gravity, not to be found wanting, pulled the unbalanced man to the floor and his head hit against the sink. Upon waking, the dazed professor began to fervently draw an image on the wall, as if guided by an unseen force. After some time the professor stepped back from his work to behold the visage of a glorious, steaming cup of coffee! At that moment, Professor Black knew he could no longer teach theoretical physics at the local college, but that his new calling was to roast gourmet coffee that would be enjoyed by the good men and women of Boise, Idaho. Later that month, Professor Black founded The Boise Bean, located in the heart of Downtown Boise, and began roasting his special blends of coffee. The Boise Bean has been stimulating the community every day since!</p>
+			<p><img id="prof_b" src="images/prof_b.jpg" alt="Professor Black" title="Professor E. Black - December, 1986">On December 4th, 1986, Professor Emerson Black set about hanging a picture frame in his bathroom. While precariously perched on top of the commode, the good professor lost his footing. Gravity, not to be found wanting, pulled the unbalanced man to the floor and his head hit against the sink. Upon waking, the dazed professor began to fervently draw an image on the wall, as if guided by an unseen force. After some time the professor stepped back from his work to behold the visage of a glorious, steaming cup of coffee! At that moment, Professor Black knew he could no longer teach theoretical physics at the local college, but that his new calling was to roast gourmet coffee that would be enjoyed by the good men and women of Boise, Idaho. Later that month, Professor Black founded The Boise Bean, located in the heart of Downtown Boise, and began roasting his special blends of coffee. The Boise Bean has been stimulating the community every day since!</p>
 		</div><!-- story -->
 		<div id="drinks">
 			<h2>Featured Drinks Menu</h2>
+				<ul>
+				<li><img src="images/sml_coffee_cup.jpg" alt="coffee cup" title="A delicious cup of coffee!" /></li>
+				<li><img src="images/sml_icedtea.jpg" alt="iced tea" title="A refreshing glass of iced tea!" /></li>
+				<li><img src="images/sml_soda.jpg" alt="soda" title="An icy soda!" /></li>
+				</ul>
+			</div><!--end drinks div -->	
+			<div id="hot">
 			<h3>Some Like It Hot</h3>
 				<ul>
 					<li>Joe - Old-school Drip</li>
@@ -31,6 +42,8 @@
 					<li>French Espresso - By the Shot</li>
 					<li>Darjeeling Tea - Hipster Soup</li>
 				</ul>
+			</div><!-- end hot -->
+			<div id="cold">
 			<h3>As Cold As Ice</h3>
 				<ul>
 					<li>Iced Coffee - Joe, on the Rocks</li>
@@ -38,23 +51,24 @@
 					<li>Iced Tea - Like Gran used to make</li>
 					<li>Water - From a real glacier</li>
 				</ul>
+			</div><!-- end cold -->
+			<div id="other">
 			<h3>Other Faves...</h3>
-				<img src="images/sml_coffee_cup.jpg" alt="coffee cup" title="A delicious cup of coffee!" />
-				<p>Lattes, Cappuccinos, Mochas, Hot Cocoa, Chai and Italian Sodas</p>
+			<p>Lattes, Cappuccinos, Mochas, Hot Cocoa, Chai and Italian Sodas</p>
+			</div><!-- end other -->
 		<aside id="roasted">
 			<h2><strong>We roast our own!</strong></h2>
-				<p><em>Fresh roasted on site daily.<br />
-				Buy it by the pound - &#36;12</em></p>
+				<p><span id="roasted_p"><em>Fresh roasted on site daily.<br />
+				Buy it by the pound - &#36;12</em></span></p>
 			<h3>What's cookin' this week:</h3>
 				<ol>
-					<li>African - Shade Grown Etheopian, Strong Bold Flavor</li>
-					<li>Americas - Colmbian, Well balanced with excellent flavor and aroma</li>
-					<li>Dark Roasts - New Orleans-style Vienna, dark chicory flavor</li>
-					<li>Special Blend - Morning Blend, Intense yet smooth clean flavor</li>
-					<li>Decaf - Costa Rica, decafinated, brisk flavor</li>
+					<li><b>African</b> - Shade-grown Ethiopian, Strong bold flavor</li>
+					<li><b>Americas</b> - Colombian, Well balanced with excellent flavor and aroma</li>
+					<li><b>Dark Roasts</b> - New Orleans-style Vienna, Dark chicory flavor</li>
+					<li><b>Special Blend</b> - Morning Blend, Intense yet smooth clean flavor</li>
+					<li><b>Decaf - Costa Rica</b>, Decaffeinated, Brisk flavor</li>
 				</ol>
 		</aside>
-		</div><!-- drinks -->
 			<a href="#">Back to Top</a>
 			<section id="events">
 				<h3>Location</h3> 
@@ -78,6 +92,7 @@
 				<li><a href="http://facebook.com">Facebook</a></li>
 				<li><a href="http://twitter.com">Twitter</a></li>
 			</ul>
-		</footer>				
+		</footer>
+		</div><!-- end wrapper -->				
 	</body>
 </html>
