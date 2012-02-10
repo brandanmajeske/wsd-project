@@ -105,13 +105,7 @@ nav li a:active {
 	margin: 0;
 	padding: 0 25px;
 	height: 325px;
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.10)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-	background: linear-gradient(top, rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	background-image: url('../images/bg_gradient.png');
 }
 
 #story h2 {
@@ -124,6 +118,13 @@ nav li a:active {
 	font-size: 1.2em;
 	color: #000;
 	margin-top: 3px;
+
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	-moz-column-gap:15px; /* Firefox */
+	-webkit-column-gap:15px; /* Safari and Chrome */
+	column-gap:15px;
 }
 
 #prof_b {
