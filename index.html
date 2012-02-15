@@ -2,17 +2,15 @@
 <html lang='en'>
 	<head>
 		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>The Boise Bean</title>
 		<link rel="stylesheet" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Magra' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div id="wrapper">
 		<header>
-			<img id="logo" src="images/sml_logo.png" alt="logo">
-			<h1>The Boise Bean Coffee Shop</h1>
 			<nav>
 				<ul>
 					<li><a href="mailto:customerservice@caffeineaddict.com">Contact</a></li>	
@@ -21,10 +19,13 @@
 					<li><a href="#drinks">Featured Drinks</a></li>
 				</ul>
 			</nav>
+			<div id="logo_container"><img id="logo" src="images/sml_logo.png" alt="logo"></div><!--end logo_container-->
+			<h1>The Boise Bean Coffee Shop</h1>
+
 		</header>
 		<div id="story">		
 			<h2>Origins</h2> 
-			<img id="prof_b" src="images/prof_b.jpg" alt="Professor Black" title="Professor E. Black - December, 1986">
+			<div id="prof_b_container"><img id="prof_b" src="images/prof_b.jpg" alt="Professor Black" title="Professor E. Black - December, 1986"></div>
 			<p>On December 4th, 1986, Professor Emerson Black set about hanging a picture frame in his bathroom. While precariously perched on top of the commode, the good professor lost his footing. Gravity, not to be found wanting, pulled the unbalanced man to the floor and his head hit against the sink. Upon waking, the dazed professor began to fervently draw an image on the wall, as if guided by an unseen force. After some time the professor stepped back from his work to behold the visage of a glorious, steaming cup of coffee! At that moment, Professor Black knew he could no longer teach theoretical physics at the local college, but that his new calling was to roast gourmet coffee that would be enjoyed by the good men and women of Boise, Idaho. Later that month, Professor Black founded The Boise Bean, located in the heart of Downtown Boise, and began roasting his special blends of coffee. The Boise Bean has been stimulating the community every day since!</p>
 		</div><!-- story -->
 		<br class="clearfix" />	
@@ -82,27 +83,27 @@
 					<div class="event_img">
 							<h4>Bleedin' Ears Night</h4>
 							<img src="images/openmic.jpg" alt="open mic">
-							<p>Open Mic - Talent not required<br />Wednesday 8 p.m. - 10 p.m.</p>
+							<p><span class="caption">Open Mic - Talent not required<br /></span>Wednesday 8 p.m. - 10 p.m.</p>
 						</div>
 						<div class="event_img">
 							<h4>Thunderdome</h4>
 							<img src="images/chess.jpg" alt="open mic">
-							<p>Chess Tourney<br />Every Saturday, 8 a.m.</p>
+							<p><span class="caption">Chess Tourney<br /></span>Every Saturday, 8 a.m.</p>
 						</div>
 						<div class="event_img"> 
 							<h4>Poetry Reading</h4>
 							<img src="images/poet.jpg" alt="open mic">
-							<p>Just what it sounds like...<br />Thursday 8 p.m. - 10 p.m.</p>
+							<p><span class="caption">Just what it sounds like...<br /></span>Thursday 8 p.m. - 10 p.m.</p>
 						</div>
 						<div class="event_img">
 							<h4>Coffee Roast</h4>
 							<img src="images/roast.jpg" alt="coffee beans">
-							<p>See how it's done<br />By appointment only</p>
+							<p><span class="caption">See how it's done<br /></span>By appointment only</p>
 						</div>
 						<div class="event_img">
 							<h4>Tasting</h4>
 							<img src="images/cups.jpg" alt="coffee cups">
-							<p>Sample our different coffees<br />Anytime!</p>
+							<p><span class="caption">Sample our different coffees<br /></span>Anytime!</p>
 						</div>
 					</div><!--end events -->
 					<br class="clearfix"/>
@@ -121,7 +122,7 @@
 					</div><!--end hours-->
 					<div id="newsletter">
 					<h2><strong>Newsletter Signup</strong></h2>
-					<p><em>Want to know about future events at The Boise Bean?<br /> <span id="join">Join our Mailing List</span> and you'll be entered in a monthly drawing for a <span id="free">free pound of coffee!</span></em></p>
+					<p><em><span id="join">Would you like to know about future events at The Boise Bean?<br /> Join our Mailing List to stay informed and you'll be entered in a monthly drawing for a free pound of coffee!</span></em></p>
 				<div id="form"><!--placeholder for form to be added -->
 					<button type="button" name="" value="" class="button">submit</button>
 				</div><!--end of form-->	
@@ -129,15 +130,12 @@
 				</section>
 		<footer>
 			<ul>
-				
-				<li><a href="http://facebook.com" target="_blank">Facebook</a></li>
-				<li><a href="http://twitter.com" target="_blank">Twitter</a></li>
 				<li><a href="#events">Events</a></li>
 				<li><a href="#roasted">Fresh Roasted</a></li>
 				<li><a href="#drinks">Featured Drinks</a></li>
 				<li><a href="mailto:customerservice@caffeineaddict.com">Contact</a></li>
 			</ul>
-			<p>&copy; 2012 - The Boise Bean </p>
+			<p id="copyright">&copy; 2012 - The Boise Bean </p>
 			
 		</footer>
 		</div><!-- end wrapper -->				

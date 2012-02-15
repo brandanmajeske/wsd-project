@@ -1,23 +1,48 @@
 /*
 The Boise Bean CSS
-Version 1.0
-Last revised: Sunday, Feb 5, 2012
+Version 2.0
+Last revised: Sunday, Feb 12, 2012
 */
+body {
+	font: 100% 'Ropa Sans', Helvetica, 'Sans serif';
+	margin: 0 auto;
+	background: #222;
+	max-width: 960px;
+	max-height: 100%;
+	border-right: 0.2083333% groove #4f1119; /*2px*/
+	border-left: 0.2083333% groove #4f1119; /*2px*/
+}
+
+#wrapper {
+	background: #fff;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+#logo_container {
+	width: 20.3125%;
+	height: 20.8333333%;
+	float: left;
+	
+}
+
+#logo {
+	max-width: 100%;
+}
+
 
 h1 {
-	font-family: 'Ribeye', 'Garamond', Serif;
-	margin: 0;
-	text-align: center;
-	position: relative;
-	top: 100px;	
-	font-size: 3.6em;
+	font: bold 3.6em Garamond;
+	margin: 5% 2.6041667%;
+	float: right;
 	color: #fff;
-	text-shadow: 1px 1px 1px #663300;
+	text-shadow: 0.1041667% 0.1041667% 0.1041667% #663300;  /*1px*/
 }
 
 h2, h3, h4, h5, h6 {
 	margin: 0;
-	font-family: 'Magra', 'Arial', 'Sans Serif';
+	font-family: Magra, Arial, 'Sans Serif';
 	letter-spacing: .03em;
 }
 
@@ -25,42 +50,27 @@ p {
 	margin:0;
 }
 
-body {
-	font-family: 'Ropa Sans', 'Helvetica', 'Sans serif';
-	margin: 0;
-	background: #222;
-}
-
 header {
-	display: block;
+	width: 100%;
 	background: #006600;
-	height: 200px;
-	border-bottom: 2px groove #4f1119;
-	border-top: 5px solid #4f1119;
+	border-bottom: .15em groove #4f1119;
+	border-top: .25em solid #4f1119;
+	overflow: hidden;
 }
-
 
 ul li {
 	list-style: circle;
 }
 
-#wrapper {
-	width: 960px;
-	margin: 0 auto;
-	background: #fff;
-	border-right: 2px groove #4f1119;
-	border-left: 2px groove #4f1119;
-}
-
-#logo {
-	float: left;
-}
 
 /* ------ Nav Menu ------ */
 nav {
-	position: relative;
-	top: -65px;
-	right: 25px;
+	float: right;
+	width: 60%;
+	height: 50px;
+	margin: 0;
+	padding-right: 2.6041667%; /*25px/960px*/
+	overflow: visible;
 }
 
 nav li {
@@ -72,7 +82,7 @@ nav li {
 
 nav li a {
 	color: #fff;
-	padding: 10px;	
+	padding: 10px;
 }
 
 nav li a:link {
@@ -84,9 +94,9 @@ nav li a:visited {
 nav li a:hover {
 	color: #ffff99;
 	background: rgba(0,80,0, .5);
-	padding: 10px;
 	border-radius: 10px;
 	text-decoration: none;
+	
 }
 
 nav li a:active {
@@ -98,36 +108,43 @@ nav li a:active {
 /*------ story div ------*/
 #story {
 	clear: both;
-	margin: 0;
-	padding: 0 25px;
-	height: 325px;
-	background-image: url('../images/bg_gradient.png');
+	padding: 0.15% 2.6041667%; 
+	width: 94.7916667%;
+	height: 33.8541667%;
+	background: url('../images/bg_gradient.png') repeat-x;
 }
 
 #story h2 {
 	color: #333;
 	text-shadow: 1px 1px 0px #fff;
-	padding: 10px 0 3px 0;
+	margin: 1.0416667% 0;
 }
 
 #story p {
 	font-size: 1.2em;
 	color: #000;
-	margin-top: 3px;
 	-moz-column-count: 3;
 	-webkit-column-count: 3;
 	column-count: 3;
-	-moz-column-gap:15px; /* Firefox */
+	-moz-column-gap: 15px; /* Firefox */
 	-webkit-column-gap:15px; /* Safari and Chrome */
 	column-gap:15px;
 }
 
+#prof_b_container {
+	width: 19.2708333%; /*185px/960px*/
+	height: 28.6458333%; /*275px/960px*/
+	float: left;
+	margin: 0 2.833333% 1% 0;	
+}
+
 #prof_b {
 	float: left;
+	max-width: 100%;
 	border: solid 5px #fff;
-	margin: 0 12px 0 0;
 	box-shadow: 0px 0px 4px #999;
 }
+
 /*------ end story -------*/
 
 /*------- drinks -------*/
@@ -139,13 +156,13 @@ nav li a:active {
 
 #drinks {
 	margin: 0;
-	padding-left: 25px;
-	width: 910px;
+	padding-left: 2.6041667%;
+	width: 94.7916667%; /* 910px/960px */
 }
 
 #drinks h2 {
 	border-top: 1px solid #001A55;
-	width: 570px;
+	width: 62.6373626%;
 	color: #333;
 	text-shadow: 1px 1px 0px #999;
 }
@@ -154,33 +171,38 @@ nav li a:active {
 	color: #333;
 	text-shadow: 1px 1px 0px #999;	
 }
+
 #drinks img{
+	max-width: 100%;
 	border: 5px solid #fff;
 	margin: 5px 15px 0 0;
 	box-shadow: 0px 0px 5px #999;
+	float: left;
+	margin-bottom: 1%;
 }
-
+.image {
+	width: 19.2307692%; /*175px/910px*/
+}
 
 #hot {
-	height: 170px;
-	width: 460px;
-}
-#hot img {
-	float: left;
+	width: 51.5494505; /*460px/910px*/
 }
 
 #cold {
-	height: 170px;
-	width: 485px;
+	clear: left;
+	width: 50.5494505; /*460px/910px*/
 }
+
 #cold img {
 	float: left;
 }
 
 
 #other {
+	clear: left;
 	height: 100px;
-	width: 335px;
+	/*width: 335px;*/
+	width: 50.5494505; /*460px/910px*/
 }
 #other img {
 	float: left;
@@ -197,9 +219,9 @@ aside {
 	background: -ms-radial-gradient(center, ellipse cover,  #72191a 0%,#4f1119 75%); /* IE10+ */
 	background: radial-gradient(center, ellipse cover,  #72191a 0%,#4f1119 75%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72191a', endColorstr='#4f1119',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	width: 275px;
-	height: 500px;
-	padding: 20px 5px 0px 35px;
+	width: 30.2197802%!important;
+	height: 54.9450549%;
+	padding: 2.1978022% 0.5494505% 0 3.8461538%; /*20px 5px 0 35px/910px*/
 	border-radius: 15px;
 	border-bottom: 1px solid #333;
 	-webkit-box-shadow: 1px 1px 2px #000;
@@ -211,29 +233,31 @@ aside h2 {
 	color: #ff9!important;
 	text-shadow: none!important;
 	border-top: none!important;
-	margin-top: 5px;
+	margin-top: 0.5494505%; /*5px*/
 	text-transform: uppercase;
 	letter-spacing: .04em;
+	width: 100%!important;
 }
 
 aside h3 {
 	color: #ff9!important;
 	text-shadow: none!important;
-	margin: 5px 0;
+	margin: 0.5494505% 0;
 }
 
 aside ol li {
-	margin: 5px 0;
+	margin: 0.5494505% 0;
 	position: relative;
-	left: -15px;
+	left: -5.4545455%; /*15px/275px*/
 	color: #fff;
-	padding: 4.5px;
+	padding: 1.81818181%; /*5px/275px*/
 }
 
 #roasted_p {
 	font-weight: bold;
-	margin: 0 0 5px 0;
+	margin: 0 0 0.5494505% 0;
 	color: #fff;
+	text-align: center;
 }
 
 /*------end roasted div -------*/
@@ -244,14 +268,15 @@ aside ol li {
 	clear: both;
 }
 
+/*------ events/location/hours section ------*/
 section {
-	display: block;
-	margin: 40px 0 0 0;
+	margin: 4.3956044% 0 0 0;
 	background: #001A55;
 	color: #fff;
-	padding-left: 15px;
-	height: 720px;
+	padding-left: 1.648516%; /*15px/910px*/
+	height: 750px;
 	border-top: 2px solid #4F1119;
+	overflow: visible;
 }
 
 section h3{
@@ -263,15 +288,15 @@ section a {
 	color: #fff;
 	display: block;
 	height: 18px;
-	width: 100px;
+	width: 10.4166667%;
 	background: #001A55;
 	position: relative;
-	top: -35px;
+	top: -4.6458333%;
 	text-align: center;
 	font-size: .75em;
 	letter-spacing: .07em;
-	padding: 2px;
-	margin: 20px 25px 0 0;
+	padding: 0.20833333%; /*2px/960px*/
+	margin: 2.08333333% 2.6041667% 0 0; /*20px 25px 0 0/960px*/
 	border-top: 2px solid #4F1119;
 	-webkit-border-top-left-radius: 12px;
 	-webkit-border-top-right-radius: 12px;
@@ -285,52 +310,19 @@ section a:hover {
 	color: #ffff99;
 }
 
-/* ------ location ------*/
-#location {
-	width: 260px;
-	height: 255px;
-	margin: 10px;
-	float: left;
-}
-
-#location img {
-	border: 5px solid #fff;
-	margin-top: 5px;
-	box-shadow: 0px 0px 5px #000;
-}
-#location  p {
-	text-align: center;
-	font-size: .85em;
-}
-
-/*------ hours ------*/
-#hours {
-	float: left;
-	width: 260px;
-	height: 80px;
-	margin: 10px 10px 0 25px;
-	padding-left: 10px;
-}
-#hours ul li { 
-	font-size: 1.1em;
-	margin-top: 5px;
-	position: relative;
-	left: -15px;
-	
-}
 
 /*------ events ------*/
 
 #events {
 	float: left;
 	margin: 0 0 20px 0;
-	width: 940px;
+	width: 100%;
 }
 
 #events h3 {
-	width: 900px;
-	margin-left: 10px;
-	padding-top: 5px;
+	width: 95.7446809%; /*900px/940px*/
+	margin-left: 1.0638298%; /*10px/940px*/
+	padding-top: 0.5319149%;/*5px*/
 	position: relative;
 	top: -20px;
 	font-size: 1.35em;
@@ -340,8 +332,9 @@ section a:hover {
 
 
 #events img {
+	max-width: 100%;
 	margin-top: 5px;
-	border: 7px solid #fff;
+	border: 0.438em solid #fff;
 	box-shadow: 0 0 6px #004EFF;
 
 }
@@ -349,48 +342,91 @@ section a:hover {
 
 .event_img {
 	float: left;
-	width: 165px;
+	width: 17.1875%; /*165px/960px*/
+	height: 36.66666667%; /*275px/750px*/
 	text-align: center;
-	padding: 5px 10px;
+	padding: 0.5208333% 1.0416667%; /*5px 10px*/
 }
 
 .event_img p {
 	font-size: .8em;
 }
 
+
+
+/* ------ location ------*/
+#location {
+	width: 27.083333333%;/*260px/960px*/
+	height: 26.5625%;/*255px*/
+	margin: 10px;
+	float: left;
+}
+
 #location h3{
 	color: #FFFF99;
 }
+#location img {
+	max-width: 100%;
+	border: 0.313em solid #fff;
+	margin-top: 0.5208333%;/*5px*/
+	box-shadow: 0 0 0.313em #004EFF;
+}
+#location  p {
+	text-align: center;
+	font-size: .85em;
+}
 
+/*------ hours ------*/
+#hours {
+	float: left;
+	width: 27.0833333%;/*260px/960px*/
+	margin: 1.0416667% 1.0416667% 0 2.6041667%;/*10px 10px 0 25px*/
+	padding-left: 1.0416667%; /*10px/960px*/
+}
+#hours ul li { 
+	font-size: 1.35em;
+	margin-top: 5px;
+	position: relative;
+	left: -15px;
+}
 #hours h3 {
 	color: #ffff99;
 }
 
+
 #newsletter {
-	float: right;
-	clear: right;
+	float: left;
 	background: #000;
-	background: rgba(0,0,0,.80);
-	width: 275px;
-	height: 300px;
-	padding: 10px 20px 10px 35px;
-	margin-right: 25px;
-	border-bottom: 1px solid #4F1119;
-	border-radius: 15px;
-	box-shadow: 1px 1px 2px #000;
+	background: rgba(0,0,5,.80);
+	width: 28.6458333%; /*275px/960px*/
+	/*height: 18.75em;/*300px/16-1em*/
+	padding: .625em .75em 1em 1em;
+	margin: 0 2.6041667% 2.6041667% 3.6458333%;/*0 25px 0 30px*/
+	border-bottom: .063em solid #4F1119;
+	border-radius: 0.938em;
+	box-shadow: .063em .063em 0.125em #000;  /*1px 1px 2px*/
+}
+
+#newsletter h2 {
+	text-align: center;
 }
 
 #newsletter span {
-	color: #004EFF;
+	color: #c0d3ff;
 }
 
+#newsletter p {
+	margin: 0 auto;
+	width: 89.09090991%; /*245px/275px*/
+	font-size: 1em;
+}
 
 /*------ form ------*/
 
-#form {
-	height: 175px;
-	width: 270px;
-	background: rgba(255,255,255,.15);
+#form { 
+	/* placeholder for form */
+	height: 10.938em; /*175px/16em*/
+	background: rgba(255,255,255,.10);
 }
 
 #form button {
@@ -467,9 +503,6 @@ footer {
 	overflow: hidden;
 }
 
-footer ul{
-
-}
 
 footer li {
 	list-style: none;
@@ -497,3 +530,519 @@ footer p {
 	padding: 6px 25px;
 	color: #fff;
 }
+
+/* =================== Media Queries =================== */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+		h1 {font-size: 3em;
+		}
+		
+		header {
+			height: 200px;
+		}
+				
+		nav {
+			width: 67%;
+		}
+		
+		#story p {
+			font-size: 1.05em;
+		}
+		
+		#drinks h2 {
+			border: none;
+			width: 62.6373626%;
+		}
+
+		#story p {
+			-moz-column-count: 2;
+			-webkit-column-count: 2;
+			column-count: 2;
+			-moz-column-gap: 1.0427529%; /*10px*/ /* Firefox */
+			-webkit-column-gap:1.0427529%; /*10px*/ /* Safari and Chrome */
+			column-gap: 1.0427529%; /*10px*/ 
+		}
+				
+		aside {
+			margin: 0 auto;
+			width: 31.5%!important;
+			padding: 2.1978022% 1.5494505% 0 3.125%; /*20px 5px 0 30px/910px*/
+		}
+		
+		aside h2 {
+			font-size: 1.375em;
+	
+		}
+		aside h3 {
+			font-size: 1.1em;
+		}
+		
+		aside ol li {
+			font-size: .90em;
+		}
+	
+		.menu p {
+			font-size: 1em;
+			letter-spacing: .04em;
+		}
+		
+		section {
+			height: 725px;
+		}
+		
+		section h4 {
+			font-size: .75em;
+		}
+		
+		#events img {
+			border: 0.125em solid #fff;
+			box-shadow: 0 0 1px #004EFF;
+		}
+		
+		.event_img p {
+			font-size: .65em;
+		}
+						
+		.caption {
+			display: none;
+		}
+		
+		#hours {
+			margin-left: 1.5641293%; /*15px/959px*/
+			padding-left: 1.0427529%; /*15px/959px*/
+		}
+		
+		#hours ul li {
+			font-size: 1.1em;
+		}
+			
+} /* --- end Tablet Portrait --- */
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+				
+				
+		header {
+			height: 180px;
+		}
+				
+		nav {
+			width: 70%;
+		}
+		nav a{
+			font-size: .8em;
+		}
+		
+	
+		h1 {
+			font-size: 2.6em;
+		}
+		
+		#story p {
+		font-size: 1em;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+		-moz-column-gap: 1.0427529%; /*10px*/ /* Firefox */
+		-webkit-column-gap:1.0427529%; /*10px*/ /* Safari and Chrome */
+		column-gap: 1.0427529%; /*10px*/
+		}
+		
+		#drinks h2 {
+			border: none;
+			width: 62.6373626%;
+			font-size: 1.25em;
+		}
+		
+		.menu p{
+			font-size: .95em;
+		}
+		
+		aside {
+			margin: 0 auto;
+			width: 33.5%!important;
+			padding: 2.1978022% 1.5494505% 0 3.125%; /*20px 5px 0 30px/910px*/
+		}
+		
+		aside h2 {
+			font-size: 1.3em;
+		}
+		aside h3 {
+			font-size: 1em;
+		}
+		
+		aside ol li {
+			font-size: .90em;
+		}
+		
+		#roasted_p {
+			font-size: 1em!important;
+		}
+		
+		section {
+			float: none;
+		}
+		#events img {
+			border: 0.125em solid #fff;
+			box-shadow: 0 0 1px #004EFF;
+		}	
+	
+		section {
+			height: 625px;
+		}
+		
+		section a {
+			display: none;
+		}
+		
+		section h4 {
+			font-size: .7em;
+		}
+		
+		#events h3 {
+			margin-top: 5px;
+			top: 2%;
+		}
+	
+		.event_img p {
+			font-size: .7em;
+		}
+				
+		.caption {
+			display: none;
+		}
+		
+		
+		#location {
+			margin: 10px;
+			float: left;
+		}
+		
+		#location p{
+			font-size: .8em;
+			text-align: left;
+			
+		} 
+		
+		#hours {
+			float: left;
+		}
+		
+		#hours ul li {
+			font-size: 1em;
+		}
+		
+		#newsletter {
+			float: left;
+			margin: 0 0 1% 0;
+			}
+		
+		#newsletter h2 {
+			font-size: 1.2em;
+		}
+		#newsletter p {
+			font-size: .82em;
+		}	
+					
+		footer li {
+			float: right;
+			font-size: .9em;
+		}
+		
+		#copyright {
+			font-size: .9em;
+		}
+	
+	
+} /* --- end Mobile Landscape --- */
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 700px) {
+
+				header {
+					height: 160px;
+				}
+
+				nav {
+					width: 78%;
+				}
+				nav a{
+					font-size: .8em;
+				}
+
+
+				h1 {
+					font-size: 2.5em;
+				}
+				
+				#prof_b {
+					display: none;
+				}
+	
+				
+				#story h2 {
+					font-size: 1.15em;
+					width: 20%;
+				}
+
+				#story p {
+				clear: both;
+				font-size: .98em;
+				-moz-column-count: 1;
+				-webkit-column-count: 1;
+				column-count: 1;
+				/*-moz-column-gap: 1.0427529%; /*10px*/ /* Firefox */
+				/*-webkit-column-gap:1.0427529%; /*10px*/ /* Safari and Chrome */
+				/*column-gap: 1.0427529%; /*10px*/
+				}
+
+				#drinks h2 {
+					border: none;
+					width: 62.6373626%;
+					font-size: 1.15em;
+				}
+				
+				#drinks h3 {
+					font-size: 1em;
+				}
+
+				.menu p{
+					font-size: .85em;
+				}
+
+				aside {
+					margin: 0 auto;
+					width: 36%!important;
+					padding: 2.1978022% 1.5494505% 0 3.125%; /*20px 5px 0 30px/910px*/
+				}
+
+				aside h2 {
+					font-size: 1.2em;
+				}
+				aside h3 {
+					font-size: .98em;
+				}
+
+				aside ol li {
+					font-size: .80em;
+				}
+
+				#roasted_p {
+					font-size: .98em!important;
+				}
+
+				section {
+					float: none;
+				}
+				#events img {
+					border: 0.125em solid #fff;
+					box-shadow: 0 0 1px #004EFF;
+				}	
+
+				section {
+					height: 725px;
+				}
+
+				section a {
+					display: none;
+				}
+
+				section h4 {
+					font-size: .7em;
+				}
+				
+				
+
+				#events h3 {
+					font-size: 1.1em;
+					margin-top: 5px;
+					top: 2%;
+				}
+				
+				.event_img {
+					float: non;
+				}
+				
+				.event_img img {
+					display: none;
+				}
+
+				.event_img p {
+					font-size: .7em;
+				}
+
+				.caption {
+					display: none;
+				}
+
+
+				#location {
+					margin: 10px;
+					float: left;
+				}
+
+				#location p{
+					font-size: .8em;
+					text-align: left;
+
+				} 
+
+				#hours {
+					float: right;
+					width: 40%;
+				}
+
+				#hours ul li {
+					font-size: 1em;
+				}
+
+				#newsletter {
+					clear: both;
+					float: right;
+					width: 40%;
+					margin: 0 2.5%;
+					}
+
+				#newsletter h2 {
+					font-size: 1.1em;
+				}
+				#newsletter p {
+					font-size: .82em;
+				}	
+
+				footer li {
+					float: right;
+					font-size: .9em;
+				}
+
+				#copyright {
+					font-size: .9em;
+				}
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+		
+		nav {
+			display: none;
+		}
+		nav ul li {
+			font-size: .8em;
+		}
+		
+		#logo {
+			display: none;
+		}
+		
+		header {
+			height: 80px;
+		}
+		
+		h1 {
+			width: 98%;
+			font-size: 2.1em;
+			text-align: center;
+			margin: 1% auto;
+		}
+		
+		#story {
+			width: 100%;
+		}
+		
+		#story p {
+		clear: both;	
+		font-size: .95em;
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+		}
+		
+		#prof_b {
+			display: none;
+		}
+		
+		#drinks h2{
+			border: none;
+			margin-left: 10%;
+		}
+		#hot, #cold, #other {
+			margin-left: 10%;
+		}
+		
+		
+		#drinks img{
+			display: none;
+		}
+		
+		#drinks p {
+			font-size: 1em;
+		}
+		
+		aside {
+			float: none;
+			margin: 2% auto;
+			width: 80%!important;
+		}
+
+		aside h2 {
+			text-align: center;
+			margin: 0!important;
+		}
+		aside p {
+			width: 100%;
+			text-align: center;
+		}
+		
+		aside h3 {
+			display: none;
+		}
+		
+		aside ol li {
+			display: none;
+		}
+		
+		section a {
+			display: none;
+		}
+		
+		section {
+			height: 250px;
+		}
+		
+		#location {
+			width: 40%;
+		}
+		
+		#location p{
+			text-align: left;
+			font-size: .8em;
+		}
+		
+		#location img {
+			border: none;
+		}
+		
+		#events {
+			display: none;
+		}
+		
+		#hours {
+			width: 45%;
+			float: right;
+		}
+		#hours ul li{
+			font-size: 1em;
+			position: relative;
+			left: -15%;
+		}
+		
+		#newsletter {
+			display: none;
+		}
+		
+		footer ul {
+			display: none;
+		}
+}
+		
