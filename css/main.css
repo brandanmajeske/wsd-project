@@ -764,6 +764,10 @@ footer p {
 				header {
 					height: 160px;
 				}
+				
+				#logo {
+					display: none;
+				}
 
 				nav {
 					width: 78%;
