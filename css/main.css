@@ -9,8 +9,8 @@ body {
 	background: #222;
 	max-width: 960px;
 	max-height: 100%;
-	border-right: 0.2083333% groove #4f1119; /*2px*/
-	border-left: 0.2083333% groove #4f1119; /*2px*/
+	border-right: .125em groove #4f1119; /*2px*/
+	border-left: .125em groove #4f1119; /*2px*/
 }
 
 #wrapper {
@@ -37,7 +37,7 @@ h1 {
 	margin: 5% 2.6041667%;
 	float: right;
 	color: #fff;
-	text-shadow: 0.1041667% 0.1041667% 0.1041667% #663300;  /*1px*/
+	text-shadow: 0.0625em 0 #663300;  /*1px*/
 }
 
 h2, h3, h4, h5, h6 {
@@ -765,20 +765,23 @@ footer p {
 					height: 160px;
 				}
 				
-				#logo {
+				#logo_container, #logo  {
 					display: none;
 				}
 
 				nav {
-					width: 78%;
+					width: 100%;
 				}
 				nav a{
-					font-size: .8em;
+					font-size: .75em;
 				}
 
 
 				h1 {
-					font-size: 2.5em;
+					font-size: 2.3em;
+					width: 100%;
+					text-align: center;
+					margin-left: 0;
 				}
 				
 				#prof_b {
@@ -811,26 +814,30 @@ footer p {
 				#drinks h3 {
 					font-size: 1em;
 				}
-
+				
+				#drinks  img{
+					display: none;
+				}
+				
 				.menu p{
 					font-size: .85em;
 				}
 
 				aside {
 					margin: 0 auto;
-					width: 36%!important;
+					width: 37%!important;
 					padding: 2.1978022% 1.5494505% 0 3.125%; /*20px 5px 0 30px/910px*/
 				}
 
 				aside h2 {
-					font-size: 1.2em;
+					font-size: 1.15em;
 				}
 				aside h3 {
-					font-size: .98em;
+					font-size: .95em;
 				}
 
 				aside ol li {
-					font-size: .80em;
+					font-size: .75em;
 				}
 
 				#roasted_p {
@@ -861,8 +868,8 @@ footer p {
 
 				#events h3 {
 					font-size: 1.1em;
-					margin-top: 5px;
-					top: 2%;
+					marginp: 5px 0;
+					top: 10px;
 				}
 				
 				.event_img {
@@ -935,28 +942,32 @@ footer p {
 			font-size: .8em;
 		}
 		
-		#logo {
+		#logo_container #logo{
 			display: none;
 		}
 		
+
+		
 		header {
-			height: 80px;
+			height: 100px;
 		}
 		
 		h1 {
 			width: 98%;
-			font-size: 2.1em;
+			font-size: 2em;
 			text-align: center;
 			margin: 1% auto;
 		}
-		
-		#story {
-			width: 100%;
+	
+		#story h2 {
+			margin-left: 5.2192067%; /*25px*/
+			font-size: 1.2em;
 		}
 		
 		#story p {
 		clear: both;	
 		font-size: .95em;
+		padding: 0 5.2192067%; /*25px*/
 		-moz-column-count: 1;
 		-webkit-column-count: 1;
 		column-count: 1;
@@ -969,7 +980,10 @@ footer p {
 		#drinks h2{
 			border: none;
 			margin-left: 10%;
+			font-size: 1.2em;
 		}
+		
+		
 		#hot, #cold, #other {
 			margin-left: 10%;
 		}
@@ -990,6 +1004,7 @@ footer p {
 		}
 
 		aside h2 {
+			font-size: 1.5em!important;
 			text-align: center;
 			margin: 0!important;
 		}
@@ -1011,7 +1026,7 @@ footer p {
 		}
 		
 		section {
-			height: 250px;
+			height: 255px;
 		}
 		
 		#location {
