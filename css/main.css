@@ -868,8 +868,8 @@ footer p {
 
 				#events h3 {
 					font-size: 1.1em;
-					marginp: 5px 0;
-					top: 10px;
+					marginp: 5px 0 10px 0;
+					top: 5px;
 				}
 				
 				.event_img {
