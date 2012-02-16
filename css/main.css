@@ -9,8 +9,8 @@ body {
 	background: #222;
 	max-width: 960px;
 	max-height: 100%;
-	border-right: .125em groove #4f1119; /*2px*/
-	border-left: .125em groove #4f1119; /*2px*/
+	border-right: 2px groove #4f1119; 
+	border-left: 2px groove #4f1119; 
 }
 
 #wrapper {
@@ -22,7 +22,6 @@ body {
 
 #logo_container {
 	width: 20.3125%;
-	height: 20.8333333%;
 	float: left;
 	
 }
@@ -34,10 +33,10 @@ body {
 
 h1 {
 	font: bold 3.4em Garamond;
-	margin: 5% 2.6041667%;
+	margin: 25px 2.6041667%;
 	float: right;
 	color: #fff;
-	text-shadow: 0.0625em 0 #663300;  /*1px*/
+	text-shadow: 1px 1px 0 #663300; 
 }
 
 h2, h3, h4, h5, h6 {
@@ -53,9 +52,9 @@ p {
 header {
 	width: 100%;
 	background: #006600;
-	border-bottom: .15em groove #4f1119;
-	border-top: .25em solid #4f1119;
-	overflow: hidden;
+	border-bottom: 2px groove #4f1119;
+	border-top: 5px solid #4f1119;
+	overflow: auto;
 }
 
 ul li {
@@ -70,7 +69,6 @@ nav {
 	height: 50px;
 	margin: 0;
 	padding-right: 2.6041667%; /*25px/960px*/
-	overflow: visible;
 }
 
 nav li {
@@ -82,7 +80,7 @@ nav li {
 
 nav li a {
 	color: #fff;
-	padding: 10px;
+	padding: 10px; /*a percentage here breaks the hover effect*/
 }
 
 nav li a:link {
@@ -108,9 +106,8 @@ nav li a:active {
 /*------ story div ------*/
 #story {
 	clear: both;
-	padding: 0.15% 2.6041667%; 
+	padding: 5px 2.6041667%; 
 	width: 94.7916667%;
-	height: 33.8541667%;
 	background: url('../images/bg_gradient.png') repeat-x;
 }
 
@@ -126,16 +123,12 @@ nav li a:active {
 	-moz-column-count: 3;
 	-webkit-column-count: 3;
 	column-count: 3;
-	-moz-column-gap: 15px; /* Firefox */
-	-webkit-column-gap:15px; /* Safari and Chrome */
-	column-gap:15px;
 }
 
 #prof_b_container {
 	width: 19.2708333%; /*185px/960px*/
-	height: 28.6458333%; /*275px/960px*/
 	float: left;
-	margin: 0 2.833333% 1% 0;	
+	margin: 0 2.833333% 0 0;	
 }
 
 #prof_b {
@@ -148,7 +141,7 @@ nav li a:active {
 /*------ end story -------*/
 
 /*------- drinks -------*/
-.menu p{
+.menu p {
 	font-size: 1.1em;
 	color: #000;
 	letter-spacing: .06em;
@@ -175,37 +168,24 @@ nav li a:active {
 #drinks img{
 	max-width: 100%;
 	border: 5px solid #fff;
-	margin: 5px 15px 0 0;
+	margin: 5px 1.6483516% 5px 0;
 	box-shadow: 0px 0px 5px #999;
 	float: left;
-	margin-bottom: 1%;
 }
 .image {
 	width: 19.2307692%; /*175px/910px*/
 }
 
 #hot {
-	width: 51.5494505; /*460px/910px*/
+	clear: left;
 }
 
 #cold {
 	clear: left;
-	width: 50.5494505; /*460px/910px*/
 }
-
-#cold img {
-	float: left;
-}
-
 
 #other {
 	clear: left;
-	height: 100px;
-	/*width: 335px;*/
-	width: 50.5494505; /*460px/910px*/
-}
-#other img {
-	float: left;
 }
 
 /*------ roasted div -------*/
@@ -220,7 +200,6 @@ aside {
 	background: radial-gradient(center, ellipse cover,  #72191a 0%,#4f1119 75%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72191a', endColorstr='#4f1119',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	width: 30.2197802%!important;
-	height: 54.9450549%;
 	padding: 2.1978022% 0.5494505% 0 3.8461538%; /*20px 5px 0 35px/910px*/
 	border-radius: 15px;
 	border-bottom: 1px solid #333;
@@ -233,7 +212,7 @@ aside h2 {
 	color: #ff9!important;
 	text-shadow: none!important;
 	border-top: none!important;
-	margin-top: 0.5494505%; /*5px*/
+	margin-top: 5px;
 	text-transform: uppercase;
 	letter-spacing: .04em;
 	width: 100%!important;
@@ -242,7 +221,7 @@ aside h2 {
 aside h3 {
 	color: #ff9!important;
 	text-shadow: none!important;
-	margin: 0.5494505% 0;
+	margin: 5px 0;
 }
 
 aside ol li {
@@ -255,12 +234,31 @@ aside ol li {
 
 #roasted_p {
 	font-weight: bold;
-	margin: 0 0 0.5494505% 0;
+	margin: 0 0 5px 0;
 	color: #fff;
 	text-align: center;
 }
 
 /*------end roasted div -------*/
+
+
+#drinks a:link {
+	color: #4f1119;
+	font-size: 1em;
+	letter-spacing: .07em;
+	float: right;
+}
+
+#drinks a:visited {
+	color: #4f1119;
+}
+#drinks a:hover {
+	color: #000;
+}
+
+#drinks a:active {
+	color: #006600;
+}
 
 /*------ end drinks ------*/
 
@@ -270,44 +268,12 @@ aside ol li {
 
 /*------ events/location/hours section ------*/
 section {
-	margin: 4.3956044% 0 0 0;
+	margin: 10px 0 0 0;
 	background: #001A55;
 	color: #fff;
 	padding-left: 1.648516%; /*15px/910px*/
-	height: 750px;
 	border-top: 2px solid #4F1119;
-	overflow: visible;
-}
-
-section h3{
-	margin:0;
-}
-
-section a {
-	float: right;
-	color: #fff;
-	display: block;
-	height: 18px;
-	width: 10.4166667%;
-	background: #001A55;
-	position: relative;
-	top: -4.6458333%;
-	text-align: center;
-	font-size: .75em;
-	letter-spacing: .07em;
-	padding: 0.20833333%; /*2px/960px*/
-	margin: 2.08333333% 2.6041667% 0 0; /*20px 25px 0 0/960px*/
-	border-top: 2px solid #4F1119;
-	-webkit-border-top-left-radius: 12px;
-	-webkit-border-top-right-radius: 12px;
-	-moz-border-radius-topleft: 12px;
-	-moz-border-radius-topright: 12px;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-}
-
-section a:hover {
-	color: #ffff99;
+	overflow: auto;
 }
 
 
@@ -315,7 +281,7 @@ section a:hover {
 
 #events {
 	float: left;
-	margin: 0 0 20px 0;
+	margin: 15px 0;
 	width: 100%;
 }
 
@@ -323,10 +289,7 @@ section a:hover {
 	width: 95.7446809%; /*900px/940px*/
 	margin-left: 1.0638298%; /*10px/940px*/
 	padding-top: 0.5319149%;/*5px*/
-	position: relative;
-	top: -20px;
 	font-size: 1.35em;
-	border-top: 1px solid #fff;
 	color: #FFFF99;
 }
 
@@ -334,7 +297,7 @@ section a:hover {
 #events img {
 	max-width: 100%;
 	margin-top: 5px;
-	border: 0.438em solid #fff;
+	border: 5px solid #fff;
 	box-shadow: 0 0 6px #004EFF;
 
 }
@@ -343,9 +306,8 @@ section a:hover {
 .event_img {
 	float: left;
 	width: 17.1875%; /*165px/960px*/
-	height: 36.66666667%; /*275px/750px*/
 	text-align: center;
-	padding: 0.5208333% 1.0416667%; /*5px 10px*/
+	padding: 5px 1.0416667%; /*5px 10px*/
 }
 
 .event_img p {
@@ -357,9 +319,8 @@ section a:hover {
 /* ------ location ------*/
 #location {
 	width: 27.083333333%;/*260px/960px*/
-	height: 26.5625%;/*255px*/
-	margin: 10px;
 	float: left;
+	margin: 0 1.0416667%;
 }
 
 #location h3{
@@ -368,8 +329,8 @@ section a:hover {
 #location img {
 	max-width: 100%;
 	border: 0.313em solid #fff;
-	margin-top: 0.5208333%;/*5px*/
-	box-shadow: 0 0 0.313em #004EFF;
+	margin-top: 5px;
+	box-shadow: 0 0 5px #004EFF;
 }
 #location  p {
 	text-align: center;
@@ -380,7 +341,7 @@ section a:hover {
 #hours {
 	float: left;
 	width: 27.0833333%;/*260px/960px*/
-	margin: 1.0416667% 1.0416667% 0 2.6041667%;/*10px 10px 0 25px*/
+	margin: 10px 0.0416667% 0 2.6041667%;/*10px 10px 0 25px*/
 	padding-left: 1.0416667%; /*10px/960px*/
 }
 #hours ul li { 
@@ -399,12 +360,11 @@ section a:hover {
 	background: #000;
 	background: rgba(0,0,5,.80);
 	width: 28.6458333%; /*275px/960px*/
-	/*height: 18.75em;/*300px/16-1em*/
-	padding: .625em .75em 1em 1em;
-	margin: 0 2.6041667% 2.6041667% 3.6458333%;/*0 25px 0 30px*/
-	border-bottom: .063em solid #4F1119;
-	border-radius: 0.938em;
-	box-shadow: .063em .063em 0.125em #000;  /*1px 1px 2px*/
+	margin: 0 2.6041667% 2.6041667% 3.6458333%; /*0 25px 0 30px*/
+	padding: 5px 2%;	
+	border-bottom: 1px solid #4F1119;
+	border-radius: 15px;
+	box-shadow: 1px 1px 2px #000; 
 }
 
 #newsletter h2 {
@@ -425,7 +385,7 @@ section a:hover {
 
 #form { 
 	/* placeholder for form */
-	height: 10.938em; /*175px/16em*/
+	height: 175px;
 	background: rgba(255,255,255,.10);
 }
 
@@ -433,9 +393,9 @@ section a:hover {
 		position: relative;
 		top: 140px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 14px;
+		font-size: .85em;
 		color: #000;
-		padding: 5px 10px;
+		padding: 5px 5%;
 		background: -moz-linear-gradient(
 			top,
 			#ffff99 0%,
@@ -499,15 +459,14 @@ footer {
 	background: #4F1119;
 	border-top: 2px groove #FFF;
 	border-bottom: 2px groove #4F1119;
-	height: 50px;
-	overflow: hidden;
+	overflow: auto;
 }
 
 
 footer li {
 	list-style: none;
 	float: right;
-	margin: 5px 10px;
+	margin: 5px 1.0416667%;
 }
 
 footer a:link {
@@ -527,7 +486,7 @@ footer a:active{
 
 footer p {
 	float: left;
-	padding: 6px 25px;
+	padding: 6px 2.6041667%;
 	color: #fff;
 }
 
@@ -535,13 +494,11 @@ footer p {
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media screen and (min-width: 768px) and (max-width: 959px) {
-		h1 {font-size: 3em;
+		h1 {
+			font-size: 2.8em;
 		}
 		
-		header {
-			height: 200px;
-		}
-				
+			
 		nav {
 			width: 67%;
 		}
@@ -553,6 +510,10 @@ footer p {
 		#drinks h2 {
 			border: none;
 			width: 62.6373626%;
+		}
+		
+		#drinks a {
+			display: none;
 		}
 
 		#story p {
@@ -587,10 +548,6 @@ footer p {
 			letter-spacing: .04em;
 		}
 		
-		section {
-			height: 725px;
-		}
-		
 		section h4 {
 			font-size: .75em;
 		}
@@ -621,16 +578,12 @@ footer p {
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-				
-				
-		header {
-			height: 180px;
-		}
-				
+						
 		nav {
 			width: 70%;
 		}
-		nav a{
+		
+		nav a { 
 			font-size: .8em;
 		}
 		
@@ -655,6 +608,9 @@ footer p {
 			font-size: 1.25em;
 		}
 		
+		#drinks a {
+			display: none;
+		}
 		.menu p{
 			font-size: .95em;
 		}
@@ -688,13 +644,6 @@ footer p {
 			box-shadow: 0 0 1px #004EFF;
 		}	
 	
-		section {
-			height: 625px;
-		}
-		
-		section a {
-			display: none;
-		}
 		
 		section h4 {
 			font-size: .7em;
@@ -761,9 +710,6 @@ footer p {
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 700px) {
 
-				header {
-					height: 170px;
-				}
 				
 				#logo_container, #logo  {
 					display: none;
@@ -790,6 +736,7 @@ footer p {
 	
 				
 				#story h2 {
+					margin
 					font-size: 1.15em;
 					width: 20%;
 				}
@@ -852,10 +799,6 @@ footer p {
 					box-shadow: 0 0 1px #004EFF;
 				}	
 
-				section {
-					height: 725px;
-				}
-
 				section a {
 					display: none;
 				}
@@ -864,8 +807,7 @@ footer p {
 					font-size: .7em;
 				}
 				
-				
-
+	
 				#events h3 {
 					font-size: 1.1em;
 					marginp: 5px 0 10px 0;
@@ -913,7 +855,7 @@ footer p {
 					clear: both;
 					float: right;
 					width: 40%;
-					margin: 0 2.5%;
+					margin: 10px 2.5% 15px 2.5%;
 					}
 
 				#newsletter h2 {
@@ -946,17 +888,11 @@ footer p {
 			display: none;
 		}
 		
-
-		
-		header {
-			height: 100px;
-		}
-		
 		h1 {
 			width: 98%;
 			font-size: 2em;
 			text-align: center;
-			margin: 1% auto;
+			margin: 10px auto;
 		}
 	
 		#story h2 {
@@ -997,6 +933,10 @@ footer p {
 			font-size: 1em;
 		}
 		
+		#drinks a {
+			display: none;
+		}
+		
 		aside {
 			float: none;
 			margin: 2% auto;
@@ -1021,13 +961,6 @@ footer p {
 			display: none;
 		}
 		
-		section a {
-			display: none;
-		}
-		
-		section {
-			height: 255px;
-		}
 		
 		#location {
 			width: 40%;
