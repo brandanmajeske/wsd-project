@@ -167,25 +167,40 @@ nav li a:active {
 #drinks img{
 	max-width: 100%;
 	border: 5px solid #fff;
-	margin: 5px 1.6483516% 5px 0;
-	box-shadow: 0px 0px 5px #999;
+	box-shadow: 0px 0px 3px #999;
+	margin: 10px .5% 10px 0;
 	float: left;
 }
+
 .image {
 	width: 19.2307692%; /*175px/910px*/
 }
 
-#hot {
-	clear: left;
+table {
+	background: #fff;
+	border: 5px solid #4f1119;
+	border-collapse: collapse;
+	width: 62.3076923%; /*567*/
 }
 
-#cold {
-	clear: left;
+thead th {
+	background: #4f1119;
+	color: #fff;
+	text-align: left;
+	font-size: 1.2em;
 }
 
-#other {
-	clear: left;
+table td {
+	width: 33.33333333%; /*189px/567px*/
+	padding: 5px;
+	font-size: 1.2em;
+	border-right: .0625em solid #4f1119;
 }
+
+.odd {
+	background-color: #ddd;
+}
+
 
 /*------ roasted div -------*/
 aside {
@@ -242,10 +257,12 @@ aside ol li {
 
 
 #drinks a:link {
+	clear: both;
 	color: #4f1119;
 	font-size: 1em;
 	letter-spacing: .07em;
-	float: right;
+	float: left;
+	margin-top: 15px;
 }
 
 #drinks a:visited {
@@ -258,6 +275,7 @@ aside ol li {
 #drinks a:active {
 	color: #006600;
 }
+
 
 /*------ end drinks ------*/
 
@@ -368,29 +386,61 @@ section {
 
 #newsletter h2 {
 	text-align: center;
+		color: #ffff99;
 }
 
-#newsletter span {
+#newsletter h4 {
 	color: #c0d3ff;
 }
 
-#newsletter p {
-	margin: 0 auto;
-	width: 89.09090991%; /*245px/275px*/
-	font-size: 1em;
+#newsletter span {
+	color: #fff;
 }
+
+#newsletter p {
+	margin: 15px 0;
+	width: 95%;
+	font-size: 1.1em;
+	
+	
+}
+
+#prize {
+	margin: 15px 0;
+}
+
 
 /*------ form ------*/
 
 #form { 
-	/* placeholder for form */
-	height: 175px;
-	background: rgba(255,255,255,.10);
+	width: 100%;
+	margin: 5%;
 }
 
+#form label {
+	float: left;
+	clear: left;
+	color: #ffff99;
+	padding-top: 2%;
+
+}
+
+#form input {
+	width: 85%;
+	clear: left;
+	float: left;
+	color: #4f1119;
+	font: bold .85em/1.5 Arial;
+}
+
+#form input:focus {
+	background-color: #ffff99;
+} 
+
 #form button {
-		position: relative;
-		top: 140px;
+		margin: 5% 0;
+		float: left;
+		clear: both;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: .85em;
 		color: #000;
@@ -447,6 +497,24 @@ section {
 	-webkit-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
 		inset 0px 0px 1px rgba(255,255,255,0.6);	
+}
+
+#form dl {
+	clear: both;
+}
+
+#form dt {
+	font-weight: bold;
+
+}
+
+#form dd {
+	position: relative;
+	left: -10%;
+}
+	
+#checkbox {
+clear: left;
 }
 
 /*------ footer ------*/
@@ -506,15 +574,6 @@ footer p {
 			font-size: 1.05em;
 		}
 		
-		#drinks h2 {
-			border: none;
-			width: 62.6373626%;
-		}
-		
-		#drinks a {
-			display: none;
-		}
-
 		#story p {
 			-moz-column-count: 2;
 			-webkit-column-count: 2;
@@ -523,7 +582,28 @@ footer p {
 			-webkit-column-gap:1.0427529%; /*10px*/ /* Safari and Chrome */
 			column-gap: 1.0427529%; /*10px*/ 
 		}
-				
+		
+		#drinks h2 {
+			border: none;
+			width: 62.6373626%;
+		}
+		
+		#drinks a {
+			display: none;
+		}
+		
+		table {
+			width: 62%; /*567*/
+		}
+		
+		table th {
+			font-size: 1em;
+		}
+
+		table td {
+			font-size: 1em;
+		}
+		
 		aside {
 			margin: 0 auto;
 			width: 31.5%!important;
@@ -572,6 +652,26 @@ footer p {
 		#hours ul li {
 			font-size: 1.1em;
 		}
+		
+		#newsletter h2 {
+			font-size: 1.2em;
+		}
+		
+		#form h4 {
+			font-size: .95em!important;
+		}
+		
+		#form p {
+			font-size:.95em;
+		}
+		
+		#form dl {
+			font-size: .85em;
+		}
+		
+		#form label {
+			font-size: .9em;
+		}
 			
 } /* --- end Tablet Portrait --- */
 
@@ -610,8 +710,21 @@ footer p {
 		#drinks a {
 			display: none;
 		}
-		.menu p{
-			font-size: .95em;
+		
+		#drinks img {
+			border: 1px solid #fff;
+			box-shadow: 0 0 1px #999;
+		}		
+		table {
+			width: 60%; /*567*/
+		}
+
+		table th {
+			font-size: 1em;
+		}
+
+		table td {
+			font-size: 1em;
 		}
 		
 		aside {
@@ -687,12 +800,32 @@ footer p {
 			}
 		
 		#newsletter h2 {
-			font-size: 1.2em;
+			font-size: 1.1em;
 		}
 		#newsletter p {
 			font-size: .82em;
+		}
+		
+		#form h4 {
+			font-size: .9em!important;
+		}
+
+		#form p {
+			font-size:.9em;
+		}
+
+		#form dl {
+			font-size: .8em;
+		}
+
+		#form label {
+			font-size: .85em;
+		}
+		
+		#form input {
+			font: bold .8em/1.5 Arial;
 		}	
-					
+				
 		footer li {
 			float: right;
 			font-size: .9em;
@@ -763,10 +896,19 @@ footer p {
 				#drinks  img{
 					display: none;
 				}
-				
-				.menu p{
-					font-size: .85em;
+		
+				table {
+					width: 55%; /*567*/
 				}
+
+				table th {
+					font-size: .9em;
+				}
+
+				table td {
+					font-size: .9em;
+				}
+	
 
 				aside {
 					margin: 0 auto;
@@ -808,12 +950,12 @@ footer p {
 	
 				#events h3 {
 					font-size: 1.1em;
-					marginp: 5px 0 10px 0;
+					margin: 5px 0 10px 0;
 					top: 5px;
 				}
 				
 				.event_img {
-					float: non;
+					float: left;
 				}
 				
 				.event_img img {
@@ -861,6 +1003,10 @@ footer p {
 				}
 				#newsletter p {
 					font-size: .82em;
+				}
+				
+				#form input {
+					font: bold .75em/1.5 Arial;
 				}	
 
 				footer li {
@@ -934,6 +1080,20 @@ footer p {
 		#drinks a {
 			display: none;
 		}
+		
+		table {
+			width: 80%; /*567*/
+			margin-left: 10%;
+		}
+
+		table th {
+			font-size: .9em;
+		}
+
+		table td {
+			font-size: .9em;
+		}
+	
 		
 		aside {
 			float: none;

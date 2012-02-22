@@ -46,33 +46,43 @@
 								</ol>
 						</aside>	
 						<h2>Featured Drinks Menu</h2>
-						<div id="hot">
-						<h3>Some Like It Hot</h3>
 						<img class="image" src="images/sml_coffee_cup.jpg" alt="coffee cup" title="A delicious cup of coffee!" />
-						<p>Joe - Old-school Drip<br />	High Octane - Jet Fuel<br />
-						French Espresso - By the Shot<br />
-						Hot Cider - Hot apple juice<br />
-						Darjeeling Tea - Hipster Soup</p>
-						</div><!-- end hot -->
-						<div id="cold">
-						<h3>As Cold As Ice</h3>
 						<img class="image" src="images/sml_icedtea.jpg" alt="iced tea" title="A refreshing glass of iced tea!" />
-						<p>Iced Coffee - Joe, on the Rocks<br />
-						The Freezerino - House special<br />
-						Chilled Cider - Cold apple juice<br />
-						Iced Tea - Like Gran used to make<br />
-						Water - From a real glacier</p>
-						</div><!-- end cold -->
-						<div id="other">
-						<h3>Other Faves...</h3>
 						<img class="image" src="images/sml_soda.jpg" alt="soda" title="An icy soda!" />
-						<p>Lattes<br /> 
-						Cappuccinos<br /> 
-						Mochas<br /> 
-						Hot Cocoa<br /> 
-						Chai<br />
-						Italian Sodas</p>
-						</div><!-- end other -->
+
+
+						<table>
+							<thead>
+								<th>Some Like It Hot</th><th>As Cold As Ice</th><th>Other Faves</th>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Cup of Joe</td>
+								<td>Iced Coffee<br />
+								<td>Lattes</td> 
+							</tr>
+							<tr class="odd">
+								<td>High Octane</td>
+								<td>The Freezerino</td>
+								<td>Cappuccinos</td>
+							</tr>
+							<tr>
+								<td>French Espresso</td>
+								<td>Iced Tea</td>
+								<td>Mochas</td> 
+							</tr>
+							<tr class="odd">
+								<td>Hot Cider</td>
+								<td>Chilled Cider</td>
+								<td>Chai</td>
+							</tr>
+							<tr>
+								<td>Darjeeling Tea</td>
+								<td>Glacier Water</td>
+								<td>Italian Sodas</td>
+							</tr>
+							</tbody>
+						</table>
 			<a href="#">Back to Top</a>
 			</div><!--end drinks div -->	
 	
@@ -122,9 +132,43 @@
 					</div><!--end hours-->
 					<div id="newsletter">
 					<h2><strong>Newsletter Signup</strong></h2>
-					<p><em><span id="join">Would you like to know about future events at The Boise Bean?<br /> Join our Mailing List to stay informed and you'll be entered in a monthly drawing for a free pound of coffee!</span></em></p>
-				<div id="form"><!--placeholder for form to be added -->
-					<button type="button" name="" value="" class="button">submit</button>
+					<div id="form">
+					<form method="get" action="mailto:example@example.com">
+					<h4>Would you like to know about future events at The Boise Bean?</h4>
+					<p><span id="join"><em>Join our Mailing List and you'll be entered in a monthly drawing to win a prize!</em></span></p>
+				
+							<dl>
+							<dt>Our Privacy Policy</dt>
+							<dd>&#42; Your email is safe with us!</dd>
+							<dd>&#42; We don't spam.</dd>
+							<dd>&#42; We won't give it to anyone else.</dd>
+							</dl>
+							    <div id="prize">
+								<p>Which prize would you be most interested in winning?</p>
+								<select>
+								<option>A Pound of Coffee</option>
+								<option>A Jug of Freezerino</option>
+								</select>
+								</div>
+						<div>
+							<label for="name">First and Last Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div>
+							<label for="email">Email Address</label>
+							<input type="text" name="email" id="email">
+						</div>
+						<div>
+							<label for="phone">Phone Number (optional)</label>
+							<input type="text" name="phone" id="phone" />
+						</div>
+						<div>
+						<button type="button" name="" value="" class="button">Submit</button>
+						</div>
+					
+						
+					</form>
+					
 				</div><!--end of form-->	
 				</div><!--end newsletter-->
 				</section>
