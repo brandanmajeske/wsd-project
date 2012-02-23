@@ -1,0 +1,1159 @@
+/*
+The Boise Bean CSS
+Version 3.0
+Last revised: Wed, Feb 15, 2012
+*/
+
+/* ----- Colors ----- 
+#004EFF
+#FFFF99
+#4F1119
+#006600
+#001A55
+--------------------*/
+/*------ widths-------
+
+960
+25px l/r margin
+562 - 348 - 910
+ 
+--------------------*/
+.clearfix {
+	clear: both;
+	margin: 5px;
+}
+
+body {
+	font: 100% 'Ropa Sans', Helvetica, 'sans serif';
+	margin: 0 auto;
+	max-width: 960px;
+	background: #222;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0;
+	background: #fff;
+}
+
+#main_content {
+	background: #fff;
+	width: 61.7582418%; /*562px*/
+	padding-left: 2.6041667%; /*25px*/
+	float: left;
+}
+
+#sidebar {
+	overflow: auto;
+	float: right;
+	width: 33.2967033%;/*328px*/
+	padding-left: 2.197802%; /*20px/910px*/
+}
+
+header {
+	overflow: auto;
+	background: #006600;
+	padding-right: 2.6041667%; /*25px*/
+}
+
+
+
+nav ul li{
+	float: right;
+	margin: 20px 0 20px 2.0833333%;
+	list-style: none;
+}
+
+nav ul li a{
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+nav li a:link {
+	color: #fff;
+}
+nav li a:visited {
+	color: #fff;
+}
+nav li a:hover {
+	color: #ffff99;
+	background: rgba(0,80,0, .5);
+	border-radius: 10px;
+	text-decoration: none;
+	
+}
+
+nav li a:active {
+	color: #f4f4f4;
+	background: rgba(0,80,0, .75);
+	box-shadow: 0px .5px 0px #008600;
+}
+
+#logo_container {
+	width: 21.3186813%; /*194/910*/
+	float: left;
+}
+#logo {
+	max-width: 100%;
+}
+
+h1 {
+	margin: 0;
+	float: right;
+	font-size: 3.4em;
+	color: #fff;
+	text-shadow: 1px 1px 0px #001A55;
+}
+
+h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: Magra, Arial, 'Sans Serif';
+	letter-spacing: .03em;
+	text-shadow: 1px 1px 0px #999;
+}
+
+
+/*===============================================End Header ================*/
+
+#story {
+	clear: both;
+}
+
+#story p {
+	font-size: 1.125em;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	-moz-column-gap: 15px; /* Firefox */
+	-webkit-column-gap:15px; /* Safari and Chrome */
+	column-gap:15px;
+}
+
+
+/*================================================Drinks Menu ===============*/
+
+
+#menu {
+	width: 100%;
+	clear: right;
+	margin-top: 10px;
+}
+
+.menu_category {
+	width: 33.2740214%; /*187px/562px*/
+	float: left;
+}
+
+.menu_category p {
+	font-size: 1.5em;
+}
+
+.image {
+	width: 31%; /*175px/910px*/
+	border: 3px solid #4f1119;
+	margin-left: 1%;
+	float: left;
+}
+
+.image img {
+	max-width: 100%;
+}
+
+table {
+	clear: both;
+	background: #fff;
+	border: 5px solid #4f1119;
+	border-collapse: collapse;
+	width: 100%; /*562*/
+	margin-top: 15px;
+}
+
+thead th {
+	background: #4f1119;
+	color: #fff;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+table td {
+	width: 33.33333333%; /*189px/567px*/
+	padding: 5px;
+	font-size: 1.2em;
+	border-right: .0625em solid #4f1119;
+}
+
+.odd {
+	background-color: #ddd;
+}
+
+/*================================================== Events ==========================*/
+
+section {
+	width: 100%;
+	border: 2px solid #001A55;
+	overflow: auto;
+	background: rgba(255, 255, 0, .25);
+	margin-bottom: 20px;
+}
+
+section a:link {
+	color: #fff;
+	background: #4f1119;
+	padding: 10px;
+	float: left;
+}
+
+section a:visited {
+	color: #fff;
+}
+
+
+section a:hover {
+	color: #FFFF99;
+}
+
+section a:active {
+	color: #999;
+}
+
+#events {
+	clear: both;
+}
+#events h3 {
+	margin: 20px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.event_img {
+	width: 33.2740214%; /*187px*/
+	text-align: center;
+	color: #001A55;
+	float: left;
+}
+
+.img_container{
+	width: 80.2139037%;
+	margin: 0 9.8930481%; /*18.5px/187px*/
+}
+
+.event_img img {
+	border: 2px solid #4f1119;
+	max-width: 100%;
+}
+
+.caption {
+	font-size: 1em;
+	position: relative;
+	top: -15px;
+}
+
+/*================================================== Sidebar ==========================*/
+#sidebar h3 {
+	font-size: 1.5em;
+}
+
+aside {
+	margin-top: 10px;
+	float: left;
+	background: #4F1119;/* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #72191a 0%, #4f1119 75%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#72191a), color-stop(75%,#4f1119)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #72191a 0%,#4f1119 75%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #72191a 0%,#4f1119 75%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #72191a 0%,#4f1119 75%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover,  #72191a 0%,#4f1119 75%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72191a', endColorstr='#4f1119',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	width: 82.5082508%; /*250px/303px*/
+	padding: 10px 1.66666667% 0 6%; /*10px 5px 0 15px/250x*/
+	margin-top: 10px;
+	border-radius: 15px;
+	border-bottom: 1px solid #333;
+	-webkit-box-shadow: 1px 1px 2px #000;
+	-moz-box-shadow: 1px 1px 2px #000;
+	box-shadow: 1px 1px 2px #000;
+}
+
+aside h2 {
+	color: #ff9!important;
+	text-shadow: none!important;
+	border-top: none!important;
+	margin-top: 5px;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	width: 100%!important;
+}
+
+aside h3 {
+	color: #ff9!important;
+	text-shadow: none!important;
+	font-size: 1.2em!important;
+}
+
+aside ol li {
+	position: relative;
+	left: -5.4545455%; /*15px/275px*/
+	color: #fff;
+	padding: 0 1%;
+	margin:0;
+}
+
+#roasted {
+	margin: 0 auto;
+	
+}
+
+#roasted_p {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+
+#location {
+	margin: 10px 0;
+}
+
+#location h3 {
+	margin-top: 15px;
+}
+
+#location p{
+	position: relative;
+	top: -15px;
+	font-size: 1.1em;
+}
+
+#location_container {
+	width: 71.8390805%; /*250px/348px*/
+}
+
+#location_container img{
+	max-width: 100%;
+	border: 5px solid #4F1119;
+}
+
+#hours {
+	width: 86.2068966%; /*300px/348px*/
+}
+
+#hours ul li {
+	list-style: circle;
+}
+
+#newsletter {
+	width: 86.2068966%; /*300px/348px*/
+	padding: 5px 2%;
+	background-color: silver;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+
+#newsletter h2 {
+	text-align: left;
+	text-shadow: none;
+	margin-left: 4%;
+	overflow: auto;
+}
+
+		#form h4 {
+			font-weight: normal;
+			text-shadow: none;
+			color: #222;
+			width: 85%;
+		}
+
+		#newsletter span {
+			display: block;
+			color: #4f1119;
+			width: 90%;
+			text-align: left;
+			
+		}
+
+		#newsletter p {
+			margin: 15px 0;
+			width: 95%;
+			font-size: 1.1em;
+
+
+		}
+
+		#prize {
+			margin: 15px 0;
+		}
+
+
+		/*------ form ------*/
+
+		#form { 
+			width: 100%;
+			margin: 5%;
+		}
+
+		#form label {
+			float: left;
+			clear: left;
+			color: #000;
+			padding-top: 2%;
+
+		}
+
+		#form input {
+			width: 85%;
+			clear: left;
+			float: left;
+			color: #4f1119;
+			font: bold .85em/1.5 Arial;
+		}
+
+		#form input:focus {
+			background-color: #ffff99;
+		} 
+
+	
+		#form dl {
+			clear: both;
+		}
+
+		#form dt {
+			font-weight: bold;
+
+		}
+
+		#form dd {
+			position: relative;
+			left: -10%;
+		}
+
+		#newsletter button {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				color: #f2f2f2;
+				margin-top: 10px;
+				padding: 5px 10px;
+				background: -moz-linear-gradient(
+					top,
+					#751616 0%,
+					#572229 25%,
+					#402125 75%,
+					#380c12);
+				background: -webkit-gradient(
+					linear, left top, left bottom, 
+					from(#751616),
+					color-stop(0.25, #572229),
+					color-stop(0.75, #402125),
+					to(#380c12));
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border: 3px solid #171717;
+				-moz-box-shadow:
+					0px 1px 3px rgba(000,000,000,0.5),
+					inset 0px 0px 10px rgba(087,087,087,0.7);
+				-webkit-box-shadow:
+					0px 1px 3px rgba(000,000,000,0.5),
+					inset 0px 0px 10px rgba(087,087,087,0.7);
+				text-shadow:
+					0px -1px 0px rgba(153,153,153,0.4),
+					0px 1px 0px rgba(102,102,102,0.3);
+			}
+
+			#newsletter button:hover {
+					-moz-box-shadow: 0px 0px 10px #333;
+					-webkit-box-shadow: 0px 0px 10px #333;
+					box-shadow: 0 0 10px #333;
+				}
+
+			#newsletter button:active {
+					-moz-box-shadow: 0px 0px 10px #4F1119;
+					-webkit-box-shadow: 0px 0px 10px #4F1119;
+					box-shadow: 0 0 10px #4F1119;
+				}
+
+
+/*================================================ Footer =============================*/
+
+footer {
+	clear: both;
+	background: #006600;
+	overflow: auto;
+}
+
+footer p {
+	float: right;
+	margin-right: 2.6041667%; /*25px*/
+	color: #fff;
+	font-size: 1.2em;
+}
+
+/*================================================= Media Queries ======================*/
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 865px) and (max-width: 959px) {
+	
+	nav ul li a {
+		font-size: 1.1em;
+	}
+	
+	h1 {
+		font-size: 3em;
+	}
+	
+	h2 {
+		font-size: 1.35em;	
+	} 
+	
+	h3 {
+		font-size: 1em;
+	}
+	
+	thead th {
+		font-size: 1.1em;
+	}
+
+	table td {
+		font-size: 1.1em;
+	}
+	
+	#story p {
+		font-size: 1em;
+	}
+	
+	section a {
+		font-size: .95em;
+	}
+	
+	#events h3 {
+		font-size: 1.2em;
+	}
+	
+	.event_img h4 {
+		font-size: .95em;
+	}
+	
+	.caption {
+		font-size: .95em;
+	}
+
+	aside h2 {
+		font-size: 1.3em;
+	}
+
+	aside h3 {
+		font-size: 1em!important;
+	}
+
+	aside ol li {
+		font-size: .85em;
+	}	
+	
+	#roasted_p {
+		font-size: 1em!important;
+	}
+
+	#location h3 {
+		font-size: 1.3em;
+	}
+	
+	#location p {
+		font-size: .95em;
+	}
+	
+	#hours h3 {
+		font-size: 1.3em;
+	}
+	
+	#hours ul li {
+		font-size: .95em;
+	}
+	
+	#newsletter h3 {
+		font-size: 1.3em;
+	}
+	
+	#form h4 {
+		font-size: 1em;
+	}
+	
+	#form p {
+		font-size: .95em;
+	}
+	
+	#form h4 {
+		font-size: .9em;
+	}
+	
+	#form label {
+		font-size: .95em;
+	}
+	
+	#form input {
+		font-size: .80em;
+	}
+	
+	#form dt {
+		font-size: .95em;
+	}
+
+	#form dd {
+		font-size: .95em;
+	}
+	
+	footer p {
+		font-size: 1.1em;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 864px) {
+	
+	nav ul li a {
+		font-size: 1em;
+	}
+	
+	h1 {
+		font-size: 2.8em;
+	}
+	
+	h2 {
+		font-size: 1.25em;	
+	} 
+	
+	h3 {
+		font-size: .95em;
+	}
+	
+	
+	thead th {
+		font-size: 1em;
+	}
+
+	table td {
+		font-size: 1em;
+	}
+	
+	
+	#story p {
+		font-size: .95em;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+		
+	section a {
+		font-size: .9em;
+	}
+	#events h3 {
+		font-size: 1.1em;
+	}
+	
+	.event_img h4 {
+		font-size: .9em;
+	}
+	
+	.caption {
+		font-size: .9em;
+	}
+
+	aside h2 {
+		font-size: 1.2em;
+	}
+
+	aside h3 {
+		font-size: .95em!important;
+	}
+
+	aside ol li {
+		font-size: .75em;
+	}	
+	
+	#roasted_p {
+		font-size: .95em!important;
+	}
+
+	#location h3 {
+		font-size: 1.2em;
+	}
+	
+	#location p {
+		font-size: .85em;
+	}
+	
+	#hours h3 {
+		font-size: 1.2em;
+	}
+	
+	#hours ul li {
+		font-size: .9em;
+	}
+	
+	#newsletter h3 {
+		font-size: 1.2em;
+	}
+
+	#form h4 {
+		font-size: .95em;
+	}
+	
+	#form p {
+		font-size: .85em;
+	}
+	
+	
+	#form label {
+		font-size: .85em;
+	}
+	
+	#form input {
+		font-size: .75em;
+	}
+	
+	#form dt {
+		font-size: .85em;
+	}
+
+	#form dd {
+		font-size: .85em;
+	}
+
+	footer p {
+		font-size: 1em;
+	}
+
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 700px) and (max-width: 767px) {
+	nav ul li a {
+		font-size: .9em;
+	}
+	
+	h1 {
+		font-size: 2.3em;
+	}
+	
+	h2 {
+		font-size: 1.15em;	
+	} 
+	
+	h3 {
+		font-size: .85em;
+	}
+	
+	thead th {
+		font-size: .9em;
+	}
+
+	table td {
+		font-size: .9em;
+	}
+	
+	.image {
+		border: 1px solid #4f1119;
+	}
+	
+	#story p {
+		font-size: .95em;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+		
+	section a {
+		font-size: .8em;
+	}
+	#events h3 {
+		font-size: 1em;
+	}
+	
+	.event_img h4 {
+		font-size: .9em;
+	}
+	
+	.caption {
+		font-size: .8em;
+	}
+
+	aside h2 {
+		font-size: 1.1em;
+	}
+
+	aside h3 {
+		font-size: .85em!important;
+	}
+
+	aside ol li {
+		font-size: .65em;
+	}	
+	
+	#roasted_p {
+		font-size: .85em!important;
+	}
+
+	#location h3 {
+		font-size: 1.1em;
+	}
+	
+	#location p {
+		font-size: .75em;
+	}
+	
+	#hours h3 {
+		font-size: 1.1em;
+	}
+	
+	#hours ul li {
+		font-size: .8em;
+	}
+	
+	#newsletter h3 {
+		font-size: 1.1em;
+	}
+
+	#form h4 {
+		font-size: .85em;
+	}
+	
+	#form p {
+		font-size: .75em;
+	}
+	
+	#form label {
+		font-size: .85em;
+	}
+	
+	#form input {
+		font-size: .75em;
+	}
+	
+	#form dt {
+		font-size: .75em;
+	}
+
+	#form dd {
+		font-size: .75em;
+	}
+
+	
+	footer p {
+		font-size: .9em;
+	}
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 699px) {
+
+		nav ul li a {
+			font-size: .85em;
+		}
+
+		h1 {
+			font-size: 1.8em;
+		}
+		
+		#main_content {
+			width: 95%;
+		}
+
+		h2 {
+			font-size: 1.05em;	
+		} 
+
+		h3 {
+			font-size: .75em;
+		}
+		
+		#menu img {
+			border: none;
+		}
+		
+		thead th {
+			font-size: .9em;
+		}
+
+		table td {
+			font-size: .9em;
+		}
+
+		#story p {
+			font-size: .85em;
+			-moz-column-count: 1;
+			-webkit-column-count: 1;
+			column-count: 1;
+		}
+
+		section a {
+			font-size: .7em;
+		}
+		#events h3 {
+			font-size: 1em;
+		}
+
+		.event_img h4 {
+			font-size: .9em;
+		}
+
+		.caption {
+			font-size: .8em;
+		}
+		
+		#sidebar {
+			float: left;
+			clear: both;
+			width: 100%;
+			padding: 0 5%;
+		}
+		
+		aside {
+			padding: 0;
+			text-align: center;
+			width: 65%;
+			margin-left: 14.5%;
+			}
+		
+		aside h2 {
+			font-size: 1.3em;
+		}
+
+		aside h3 {
+			font-size: 1em!important;
+		}
+		
+		aside ol li {
+			margin-left: 3.75%;
+			font-size: .68em;
+			text-align: left;
+			-moz-column-count: 2;
+			-webkit-column-count: 2;
+			column-count: 2;	
+		}	
+
+		#roasted_p {
+			font-size: .95em!important;
+		}
+		
+		#location {
+			float: right;
+			margin: 0 3%;
+		}
+
+		#location h3 {
+			font-size: 1.1em;
+		}
+
+		#location p {
+			font-size: .75em;
+		}
+		
+		#hours {
+			margin-top: 25px;
+			float: left;
+			width: 35%;
+		}
+
+		#hours h3 {
+			font-size: 1.1em;
+		}
+
+		#hours ul li {
+			font-size: .8em;
+		}
+		
+		#newsletter {
+			float: left;
+			margin: 3% 5%;
+			width: 75%;
+		}
+
+		#newsletter h3 {
+			font-size: 1.1em;
+		}
+
+		#form h4 {
+			font-size: .95em;
+		}
+
+		#form p {
+			font-size: .85em;
+		}
+
+		#form h4 {
+			font-size: .8em;
+		}
+
+		#form label {
+			font-size: .85em;
+		}
+
+		#form input {
+			font-size: .75em;
+		}
+
+		#form dt {
+			font-size: .85em;
+		}
+
+		#form dd {
+			font-size: .85em;
+		}
+		
+
+		footer p {
+			font-size: .8em;
+		}
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	nav{
+		display: none;
+	}
+
+	h1 {
+		width: 100%;
+		font-size: 1.5em;
+		text-align: center;
+	}
+	
+	header {
+		padding: 1%;
+	}
+	
+	#logo_container {
+		display: none;
+	}
+	
+	#main_content {
+		width: 95%;
+	}
+	
+
+	h2 {
+		font-size: 1.05em;	
+	} 
+
+	h3 {
+		font-size: .75em;
+	}
+	
+	#menu h2 {
+		text-align: center;
+	}
+	
+	
+	#menu img {
+		display: none;
+	}
+	
+	thead th {
+		font-size: .8em;
+	}
+
+	table td {
+		font-size: .8em;
+	}
+
+	#story p {
+		font-size: .85em;
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+
+	section a {
+		font-size: .7em;
+	}
+	
+	#events img {
+		display: none;
+	}
+	
+	#events h3 {
+		font-size: 1em;
+	}
+
+	.event_img h4 {
+		font-size: .9em;
+	}
+
+	.caption {
+		font-size: .8em;
+	}
+	
+	#sidebar {
+		float: left;
+		clear: both;
+		width: 100%;
+		padding: 0 5%;
+	}
+	
+	aside {
+		padding: 0;
+		text-align: center;
+		width: 65%;
+		margin-left: 14.5%;
+		}
+	
+	aside h2 {
+		font-size: 1.3em;
+	}
+
+	aside h3 {
+		display: none;
+	}
+	
+	aside ol li {
+		display: none;
+	}	
+
+	#roasted_p {
+		font-size: .95em!important;
+	}
+	
+	#location {
+		float: right;
+	}
+
+	#location h3 {
+		font-size: 1.1em;
+	}
+
+	#location p {
+		font-size: .75em;
+	}
+	
+	#hours {
+		margin-top: 25px;
+		float: left;
+		width: 35%;
+	}
+
+	#hours h3 {
+		font-size: 1em;
+	}
+
+	#hours ul li {
+		font-size: .8em;
+	}
+	
+	#newsletter {
+		display: none;
+	}
+	
+	footer p{
+		display: block;
+		font-size: .8em;
+		float: none;
+		text-align: center;
+		
+	}
+
+}
