@@ -20,7 +20,7 @@ Last revised: Wed, Feb 15, 2012
 --------------------*/
 .clearfix {
 	clear: both;
-	margin: 5px;
+	margin: 5px 0;
 }
 
 body {
