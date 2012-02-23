@@ -47,7 +47,7 @@ body {
 	overflow: auto;
 	float: right;
 	width: 33.2967033%;/*328px*/
-	padding-left: 2.197802%; /*20px/910px*/
+	padding: 28px 0 0 2.197802%; /*20px/910px*/
 }
 
 header {
@@ -358,121 +358,120 @@ aside ol li {
 	overflow: auto;
 }
 
-		#form h4 {
-			font-weight: normal;
-			text-shadow: none;
-			color: #222;
-			width: 85%;
-		}
+#form h4 {
+	font-weight: normal;
+	text-shadow: none;
+	color: #222;
+	width: 85%;
+}
 
-		#newsletter span {
-			display: block;
-			color: #4f1119;
-			width: 90%;
-			text-align: left;
-			
-		}
+#newsletter span {
+	display: block;
+	color: #4f1119;
+	width: 90%;
+	text-align: left;
 
-		#newsletter p {
-			margin: 15px 0;
-			width: 95%;
-			font-size: 1.1em;
+}
 
-
-		}
-
-		#prize {
-			margin: 15px 0;
-		}
+#newsletter p {
+	margin: 15px 0;
+	width: 95%;
+	font-size: 1.1em;
 
 
-		/*------ form ------*/
+}
 
-		#form { 
-			width: 100%;
-			margin: 5%;
-		}
+#prize {
+	margin: 5px 0;
+}
 
-		#form label {
-			float: left;
-			clear: left;
-			color: #000;
-			padding-top: 2%;
 
-		}
+/*------ form ------*/
 
-		#form input {
-			width: 85%;
-			clear: left;
-			float: left;
-			color: #4f1119;
-			font: bold .85em/1.5 Arial;
-		}
+#form { 
+	width: 100%;
+	margin: 5%;
+}
 
-		#form input:focus {
-			background-color: #ffff99;
-		} 
+#form label {
+	float: left;
+	clear: left;
+	color: #000;
+	padding-top: 2%;
 
-	
-		#form dl {
-			clear: both;
-		}
+}
 
-		#form dt {
-			font-weight: bold;
+#form input {
+	width: 85%;
+	clear: left;
+	float: left;
+	color: #4f1119;
+	font: bold .85em/1.5 Arial;
+}
 
-		}
+#form input:focus {
+	background-color: #ffff99;
+} 
 
-		#form dd {
-			position: relative;
-			left: -10%;
-		}
 
-		#newsletter button {
-				font-family: Arial, Helvetica, sans-serif;
-				font-size: 14px;
-				color: #f2f2f2;
-				margin-top: 10px;
-				padding: 5px 10px;
-				background: -moz-linear-gradient(
-					top,
-					#751616 0%,
-					#572229 25%,
-					#402125 75%,
-					#380c12);
-				background: -webkit-gradient(
-					linear, left top, left bottom, 
-					from(#751616),
-					color-stop(0.25, #572229),
-					color-stop(0.75, #402125),
-					to(#380c12));
-				border-radius: 10px;
-				-moz-border-radius: 10px;
-				-webkit-border-radius: 10px;
-				border: 3px solid #171717;
-				-moz-box-shadow:
-					0px 1px 3px rgba(000,000,000,0.5),
-					inset 0px 0px 10px rgba(087,087,087,0.7);
-				-webkit-box-shadow:
-					0px 1px 3px rgba(000,000,000,0.5),
-					inset 0px 0px 10px rgba(087,087,087,0.7);
-				text-shadow:
-					0px -1px 0px rgba(153,153,153,0.4),
-					0px 1px 0px rgba(102,102,102,0.3);
-			}
+#form dl {
+	clear: both;
+}
 
-			#newsletter button:hover {
-					-moz-box-shadow: 0px 0px 10px #333;
-					-webkit-box-shadow: 0px 0px 10px #333;
-					box-shadow: 0 0 10px #333;
-				}
+#form dt {
+	font-weight: bold;
 
-			#newsletter button:active {
-					-moz-box-shadow: 0px 0px 10px #4F1119;
-					-webkit-box-shadow: 0px 0px 10px #4F1119;
-					box-shadow: 0 0 10px #4F1119;
-				}
+}
 
+#form dd {
+	position: relative;
+	left: -10%;
+}
+
+#newsletter button {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #f2f2f2;
+		margin-top: 10px;
+		padding: 5px 10px;
+		background: -moz-linear-gradient(
+			top,
+			#751616 0%,
+			#572229 25%,
+			#402125 75%,
+			#380c12);
+		background: -webkit-gradient(
+			linear, left top, left bottom, 
+			from(#751616),
+			color-stop(0.25, #572229),
+			color-stop(0.75, #402125),
+			to(#380c12));
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border: 3px solid #171717;
+		-moz-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 10px rgba(087,087,087,0.7);
+		-webkit-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 10px rgba(087,087,087,0.7);
+		text-shadow:
+			0px -1px 0px rgba(153,153,153,0.4),
+			0px 1px 0px rgba(102,102,102,0.3);
+	}
+
+#newsletter button:hover {
+		-moz-box-shadow: 0px 0px 10px #333;
+		-webkit-box-shadow: 0px 0px 10px #333;
+		box-shadow: 0 0 10px #333;
+	}
+
+#newsletter button:active {
+		-moz-box-shadow: 0px 0px 10px #4F1119;
+		-webkit-box-shadow: 0px 0px 10px #4F1119;
+		box-shadow: 0 0 10px #4F1119;
+	}
 
 /*================================================ Footer =============================*/
 
@@ -725,7 +724,6 @@ footer p {
 
 }
 
-
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 700px) and (max-width: 767px) {
 	nav ul li a {
@@ -838,203 +836,25 @@ footer p {
 		font-size: .75em;
 	}
 
-	
 	footer p {
 		font-size: .9em;
 	}
-
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 699px) {
 
-		nav ul li a {
-			font-size: .85em;
-		}
-
-		h1 {
-			font-size: 1.8em;
-		}
-		
-		#main_content {
-			width: 95%;
-		}
-
-		h2 {
-			font-size: 1.05em;	
-		} 
-
-		h3 {
-			font-size: .75em;
-		}
-		
-		#menu img {
-			border: none;
-		}
-		
-		thead th {
-			font-size: .9em;
-		}
-
-		table td {
-			font-size: .9em;
-		}
-
-		#story p {
-			font-size: .85em;
-			-moz-column-count: 1;
-			-webkit-column-count: 1;
-			column-count: 1;
-		}
-
-		section a {
-			font-size: .7em;
-		}
-		#events h3 {
-			font-size: 1em;
-		}
-
-		.event_img h4 {
-			font-size: .9em;
-		}
-
-		.caption {
-			font-size: .8em;
-		}
-		
-		#sidebar {
-			float: left;
-			clear: both;
-			width: 100%;
-			padding: 0 5%;
-		}
-		
-		aside {
-			padding: 0;
-			text-align: center;
-			width: 65%;
-			margin-left: 14.5%;
-			}
-		
-		aside h2 {
-			font-size: 1.3em;
-		}
-
-		aside h3 {
-			font-size: 1em!important;
-		}
-		
-		aside ol li {
-			margin-left: 3.75%;
-			font-size: .68em;
-			text-align: left;
-			-moz-column-count: 2;
-			-webkit-column-count: 2;
-			column-count: 2;	
-		}	
-
-		#roasted_p {
-			font-size: .95em!important;
-		}
-		
-		#location {
-			float: right;
-			margin: 0 3%;
-		}
-
-		#location h3 {
-			font-size: 1.1em;
-		}
-
-		#location p {
-			font-size: .75em;
-		}
-		
-		#hours {
-			margin-top: 25px;
-			float: left;
-			width: 35%;
-		}
-
-		#hours h3 {
-			font-size: 1.1em;
-		}
-
-		#hours ul li {
-			font-size: .8em;
-		}
-		
-		#newsletter {
-			float: left;
-			margin: 3% 5%;
-			width: 75%;
-		}
-
-		#newsletter h3 {
-			font-size: 1.1em;
-		}
-
-		#form h4 {
-			font-size: .95em;
-		}
-
-		#form p {
-			font-size: .85em;
-		}
-
-		#form h4 {
-			font-size: .8em;
-		}
-
-		#form label {
-			font-size: .85em;
-		}
-
-		#form input {
-			font-size: .75em;
-		}
-
-		#form dt {
-			font-size: .85em;
-		}
-
-		#form dd {
-			font-size: .85em;
-		}
-		
-
-		footer p {
-			font-size: .8em;
-		}
-
-}
-
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-	
-	nav{
-		display: none;
+	nav ul li a {
+		font-size: .85em;
 	}
 
 	h1 {
-		width: 100%;
-		font-size: 1.5em;
-		text-align: center;
-	}
-	
-	header {
-		padding: 1%;
-	}
-	
-	#logo_container {
-		display: none;
+		font-size: 1.8em;
 	}
 	
 	#main_content {
 		width: 95%;
 	}
-	
 
 	h2 {
 		font-size: 1.05em;	
@@ -1044,21 +864,16 @@ footer p {
 		font-size: .75em;
 	}
 	
-	#menu h2 {
-		text-align: center;
-	}
-	
-	
 	#menu img {
-		display: none;
+		border: none;
 	}
 	
 	thead th {
-		font-size: .8em;
+		font-size: .9em;
 	}
 
 	table td {
-		font-size: .8em;
+		font-size: .9em;
 	}
 
 	#story p {
@@ -1071,11 +886,6 @@ footer p {
 	section a {
 		font-size: .7em;
 	}
-	
-	#events img {
-		display: none;
-	}
-	
 	#events h3 {
 		font-size: 1em;
 	}
@@ -1107,11 +917,16 @@ footer p {
 	}
 
 	aside h3 {
-		display: none;
+		font-size: 1em!important;
 	}
 	
 	aside ol li {
-		display: none;
+		margin-left: 3.75%;
+		font-size: .68em;
+		text-align: left;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;	
 	}	
 
 	#roasted_p {
@@ -1120,6 +935,7 @@ footer p {
 	
 	#location {
 		float: right;
+		margin: 0 3%;
 	}
 
 	#location h3 {
@@ -1137,7 +953,7 @@ footer p {
 	}
 
 	#hours h3 {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	#hours ul li {
@@ -1145,15 +961,190 @@ footer p {
 	}
 	
 	#newsletter {
-		display: none;
-	}
-	
-	footer p{
-		display: block;
-		font-size: .8em;
-		float: none;
-		text-align: center;
-		
+		float: left;
+		margin: 3% 5%;
+		width: 75%;
 	}
 
+	#newsletter h3 {
+		font-size: 1.1em;
+	}
+
+	#form h4 {
+		font-size: .95em;
+	}
+
+	#form p {
+		font-size: .85em;
+	}
+
+	#form h4 {
+		font-size: .8em;
+	}
+
+	#form label {
+		font-size: .85em;
+	}
+
+	#form input {
+		font-size: .75em;
+	}
+
+	#form dt {
+		font-size: .85em;
+	}
+
+	#form dd {
+		font-size: .85em;
+	}
+	
+	footer p {
+		font-size: .8em;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+		nav{
+			display: none;
+		}
+
+		h1 {
+			width: 100%;
+			font-size: 1.5em;
+			text-align: center;
+		}
+	
+		header {
+			padding: 1%;
+		}
+	
+		#logo_container {
+			display: none;
+		}
+	
+		#main_content {
+			width: 95%;
+		}
+	
+
+		h2 {
+			font-size: 1.05em;	
+		} 
+
+		h3 {
+			font-size: .75em;
+		}
+	
+		#menu h2 {
+			text-align: center;
+		}
+	
+	
+		#menu img {
+			display: none;
+		}
+	
+		thead th {
+			font-size: .8em;
+		}
+
+		table td {
+			font-size: .8em;
+		}
+
+		#story p {
+			font-size: .85em;
+			-moz-column-count: 1;
+			-webkit-column-count: 1;
+			column-count: 1;
+		}
+
+		section a {
+			font-size: .7em;
+		}
+	
+		#events img {
+			display: none;
+		}
+	
+		#events h3 {
+			font-size: 1em;
+		}
+
+		.event_img h4 {
+			font-size: .9em;
+		}
+
+		.caption {
+			font-size: .8em;
+		}
+	
+		#sidebar {
+			float: left;
+			clear: both;
+			width: 100%;
+			padding: 0 5%;
+		}
+	
+		aside {
+			padding: 0;
+			text-align: center;
+			width: 65%;
+			margin-left: 14.5%;
+			}
+	
+		aside h2 {
+			font-size: 1.3em;
+		}
+
+		aside h3 {
+			display: none;
+		}
+	
+		aside ol li {
+			display: none;
+		}	
+
+		#roasted_p {
+			font-size: .95em!important;
+		}
+	
+		#location {
+			float: right;
+		}
+
+		#location h3 {
+			font-size: 1.1em;
+		}
+
+		#location p {
+			font-size: .75em;
+		}
+	
+		#hours {
+			margin-top: 25px;
+			float: left;
+			width: 35%;
+		}
+
+		#hours h3 {
+			font-size: 1em;
+		}
+
+		#hours ul li {
+			font-size: .8em;
+		}
+	
+		#newsletter {
+			display: none;
+		}
+	
+		footer p{
+			display: block;
+			font-size: .8em;
+			float: none;
+			text-align: center;	
+	}
 }
